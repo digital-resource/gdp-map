@@ -2409,7 +2409,7 @@ markers.forEach(function(marker) {
     marker.url = '<a href="' + marker.url + '" target="_blank">Visit Website</a>';
   }
 
-  let content = '<p class="map-logo"><img src="https://www.guardiandentistry.com/images/locations/' + marker.tag + '.png"></p><p class="map-title">' + marker.title + marker.affiliate + '</p><p>' + marker.address1 + '<br>';
+  let content = '<p class="map-logo"><img src="../images/' + marker.tag + '.png"></p><p class="map-title">' + marker.title + marker.affiliate + '</p><p>' + marker.address1 + '<br>';
 
   if (marker.address2) {
     content += marker.address2 + '<br>';
@@ -2422,7 +2422,7 @@ markers.forEach(function(marker) {
     lat: marker.lat,
     lng: marker.lng,
     title: marker.title,
-    icon: "https://www.guardiandentistry.com/images/marker3.png",
+    icon: "../images/marker3.png",
     infoWindow: {
       content: content
     }
